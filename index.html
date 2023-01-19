@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <style>
+        .carousel-item {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+        }
+        .ad1 {
+            background: url(https://cdn.pixabay.com/photo/2018/07/09/21/02/integration-3527263__340.jpg) no-repeat center center;
+        }
+        .ad2 {
+            background: url(https://cdn.pixabay.com/photo/2021/10/25/16/28/natural-reserve-6741474__340.jpg) no-repeat center center;
+        }
+        .ad3 {
+            background: url(https://cdn.pixabay.com/photo/2017/10/25/17/26/hands-2888625__340.jpg) no-repeat center center;
+        }
+        @media (max-width: 576px) {
+            .carousel-item {
+            min-height: 10rem;
+        }
+        }
+        @media (min-width: 576px) {
+            .carousel-item {
+            min-height: 17rem;
+        }
+        }
+        .card-title {
+            text-align: center;
+        }
+        .font-italic {
+            color: aqua;
+        }
+        .font-sidebar {
+            color: aquamarine;
+        }
+        .card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .name1 {
+            text-align: center;
+        }
+        .name {
+            text-align: justify;
+        }
+        footer a {
+            color: #aaaaab;
+        }
+        .signature {
+            text-align: right;
+            font-size: 0.6rem;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            font-family: cursive;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img width="30" height="30" src="https://cdn.pixabay.com/photo/2014/04/02/16/15/hands-306713__340.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" 
+                data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a href="#" aria-current="page" class="nav-link">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cel działania</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Wsparcie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+                <form action="" class="d-flex">
+                    <input type="search" placeholder="Szukaj" aria-label="Szukaj" class="form-control mr-2">
+                    <button class="btn btn-outline-light" type="submit">Szukaj</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="topCarousel" class="mt-3 carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#topCarousel" data-slide-to="0" ></li>
+                <li data-target="#topCarousel" data-slide-to="1" ></li>
+                <li data-target="#topCarousel" data-slide-to="2" ></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item rounded ad1 active">
+                    <div class="carousel-caption text-light">
+                        <h3>Jak pomagamy innym?</h3>
+                    </div>
+                </div>
+                <div class="carousel-item rounded ad2">
+                    <div class="carousel-caption text-light">
+                        <h4>Dbamy o środowisko</h4>
+                        <p>Edukujemy, sprzątamy, pielęgnujemy naturę</p>
+                        <div class="data-caption">
+                            18 styczeń
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item rounded ad3">
+                    <div class="carousel-caption text-light">
+                        <h4>Wyciągamy do Ciebie pomocną dłoń</h4>
+                        <p>Nie bój się poprosić o pomoc</p>
+                        <div class="data-caption d-none d-sm-block">
+                            11 marzec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#topCarousel" type="button" data-slide="prev"
+             class="carousel-control-prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Poprzedni</span>
+            </a>
+            <a href="#topCarousel" type="button" data-slide="next"
+             class="carousel-control-next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Następny</span>
+            </a>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="row mt-3">
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2012/09/18/16/36/money-boxes-57124__340.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Zbiórka pieniędzy</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                        <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2022/03/12/17/49/woman-7064577__340.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Pomoc osobą starszym</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                        <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/18/15/09/help-164755__340.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Pomoc niepełnosprawnym</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                        <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-6 col md-4">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/27/11/48/team-spirit-2447163__340.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"> Dołącz do nas</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, aperiam.</p>
+                        <a href="#" class="btn btn-primary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mt-5 mb-5">
+                <div class="blog-post">
+                    <!-- pieniądze w rękach-->
+                    <img src="https://cdn.pixabay.com/photo/2015/02/27/18/31/money-652560__340.jpg" 
+                        title="Zbiórka pieniędzy" alt="Zbiórka pieniędzy" class="rounded float-right w-50 ml-4 mb-4">
+                    <h2 class="blog-post-title">Zbiórka pieniędzy</h2>
+                    <p class="blog-post-date">data publikacji <a href="#">Autor tekstu</a></p>
+                    <p class="blog-post-text">Lorem ipsum dolor <strong>sit amet consectetur</strong> adipisicing elit. Iste pariatur, deserunt sapiente obcaecati exercitationem totam quis numquam quisquam possimus 
+                        laudantium sed! Iure consequatur maiores temporibus asperiores nihil dolor, laboriosam illo!</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, maiores?</p>
+                    <h5>Podtytuł</h5>
+                    
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus impedit tempora, rem provident rerum inventore reiciendis nihil molestias, magni deleniti incidunt sapiente, 
+                        mollitia ducimus veniam dolores animi quam error dignissimos corporis enim eum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate assumenda qui perspiciatis voluptates quasi praesentium saepe error nihil nulla recusandae inventore aperiam quo temporibus laudantium nobis, exercitationem quidem numquam magnam aut debitis! 
+                        Provident minus nisi minima voluptatem nesciunt corrupti nemo, quos sequi quae suscipit? Fugiat impedit earum temporibus velit!</p>
+                    <div>
+                        <details>
+                            <summary style="cursor: pointer;"> (Czytaj więcej…) </summary>    
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam doloremque commodi quia reprehenderit 
+                                nobis fugiat dignissimos, eligendi eaque sequi similique illo repudiandae tempora ratione quam mollitia consequatur 
+                                aliquam odio! Ducimus minus animi reprehenderit aperiam velit sit quaerat molestiae consequatur exercitationem? 
+                                Suscipit obcaecati quo impedit minus quas expedita eius quibusdam non, dolore corporis. Nemo tenetur quo aliquid officia optio 
+                                maxime incidunt quia, repellat unde quam voluptas odit exercitationem tempore distinctio temporibus iste est cupiditate modi? 
+                                Eaque error esse eveniet beatae quia aperiam sapiente repellat ipsum fugit, 
+                                rerum quam sint adipisci distinctio numquam odio sunt minima quis, dolores consequatur facere. Optio.</p>
+                        </details>
+                    </div>
+                    <!-- <a href="#" class="btn btn-primary">Czytaj więcej</a> -->
+                </div>
+
+                <div class="blog-post mt-3">
+                    <!--serce w dłoniach-->
+                    <img src="https://cdn.pixabay.com/photo/2016/04/01/15/18/help-1300942__340.png" 
+                        title="Szukamy wolontariuszy" alt="Szukamy wolontariuszy" class="rounded float-right w-50 ml-4 mb-4">
+                    <h2 class="blog-post-title">Szukamy wolontariuszy</h2>
+                    <p class="blog-post-date">data publikacji <a href="#">Autor tekstu</a></p>
+                    <p class="blog-post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <strong>Ratione animi</strong> officia incidunt! 
+                        Recusandae aspernatur deserunt provident! <i>Ipsum</i> magnam aperiam ipsam.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, maiores?</p>
+                    <h5>Podtytuł</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus impedit tempora, rem provident rerum inventore reiciendis nihil molestias, magni deleniti incidunt sapiente, 
+                        mollitia ducimus veniam dolores animi quam error dignissimos corporis enim eum!</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, fuga amet voluptate nulla quas, officia labore at dolorum voluptatibus 
+                        laborum sunt perferendis repudiandae veniam enim sequi officiis, nesciunt aut. Inventore sit optio maxime.</p>
+                        <div>
+                            <details>
+                                <summary style="cursor: pointer;"> (Czytaj więcej…) </summary>    
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam doloremque commodi quia reprehenderit 
+                                    nobis fugiat dignissimos, eligendi eaque sequi similique illo repudiandae tempora ratione quam mollitia consequatur 
+                                    aliquam odio! Ducimus minus animi reprehenderit aperiam velit sit quaerat molestiae consequatur exercitationem? 
+                                    Suscipit obcaecati quo impedit minus quas expedita eius quibusdam non, dolore corporis. Nemo tenetur quo aliquid officia optio 
+                                    maxime incidunt quia, repellat unde quam voluptas odit exercitationem tempore distinctio temporibus iste est cupiditate modi? 
+                                    Eaque error esse eveniet beatae quia aperiam sapiente repellat ipsum fugit, 
+                                    rerum quam sint adipisci distinctio numquam odio sunt minima quis, dolores consequatur facere. Optio.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sit distinctio maxime corporis, quod, 
+                                    neque facere consequuntur, nesciunt ad iure porro. Autem magnam asperiores doloribus adipisci nobis placeat, 
+                                    voluptatem dolorum sequi sapiente rerum at deleniti velit praesentium officia nihil corporis atque amet voluptate 
+                                    quidem laudantium quae fugit illo maxime consequatur? Impedit quod assumenda labore exercitationem quae debitis repellat, 
+                                    error nihil?</p>
+                            </details>
+                        </div>
+                    <!-- <a href="#" class="btn btn-primary">Czytaj więcej</a>                        -->
+                </div>
+            
+                <div class="blog-post mt-3">
+                    <!--rodzina-->
+                    <img src="https://cdn.pixabay.com/photo/2017/02/11/09/12/family-2057307__340.png" 
+                        title="Wsparcie rodzin" alt="Wsparcie rodziny" class="rounded float-right w-50 ml-4 mb-4">
+                    <h2 class="blog-post-title">Wsparcie rodziny</h2>
+                    <p class="blog-post-date">data publikacji <a href="#">Autor tekstu</a></p>
+                    <p class="blog-post-text">Lorem, ipsum dolor sit <i>amet consectetur</i> adipisicing elit. Tempora, officiis repellendus excepturi inventore sequi culpa 
+                        soluta quaerat amet, nobis consequuntur, consequatur cupiditate ab non explicabo.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, maiores?</p>
+                    <h5>Podtytuł</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus impedit tempora, rem provident rerum inventore reiciendis nihil molestias, magni deleniti incidunt sapiente, 
+                        mollitia ducimus veniam dolores animi quam error dignissimos corporis enim eum!</p>
+                    <ul>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam obcaecati modi animi sit! Explicabo.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam obcaecati modi animi sit! Explicabo.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam obcaecati modi animi sit! Explicabo.</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam similique vero quae ab sit nulla accusamus amet voluptatem.</p>
+                    <div>
+                        <details>
+                            <summary style="cursor: pointer;"> (Czytaj więcej…) </summary>    
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam doloremque commodi quia reprehenderit 
+                                nobis fugiat dignissimos, eligendi eaque sequi similique illo repudiandae tempora ratione quam mollitia consequatur 
+                                aliquam odio! Ducimus minus animi reprehenderit aperiam velit sit quaerat molestiae consequatur exercitationem? 
+                                Suscipit obcaecati quo impedit minus quas expedita eius quibusdam non, dolore corporis. Nemo tenetur quo aliquid officia optio 
+                                maxime incidunt quia, repellat unde quam voluptas odit exercitationem tempore distinctio temporibus iste est cupiditate modi? 
+                                Eaque error esse eveniet beatae quia aperiam sapiente repellat ipsum fugit, 
+                                rerum quam sint adipisci distinctio numquam odio sunt minima quis, dolores consequatur facere. Optio.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sit distinctio maxime corporis, quod, 
+                                neque facere consequuntur, nesciunt ad iure porro. Autem magnam asperiores doloribus adipisci nobis placeat, 
+                                voluptatem dolorum sequi sapiente rerum at deleniti velit praesentium officia nihil corporis atque amet voluptate 
+                                quidem laudantium quae fugit illo maxime consequatur? Impedit quod assumenda labore exercitationem quae debitis repellat, 
+                                error nihil?</p>
+                        </details>
+                    </div>
+                    <!-- <a href="#" class="btn btn-primary">Czytaj więcej</a> -->
+                </div>
+
+                <!-- paginacja -->
+                <nav class="mt-4" aria-label="Paginacja strony">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a href="#" tabindex="-1" aria-disabled="true" class="page-link">
+                                Poprzednia
+                            </a>
+                        </li>
+                        <li class="page-item"><a href="#" class="page-link active">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">6</a></li>
+                        <li class="page-item"><a href="#" class="page-link">7</a></li>
+                        <li class="page-item"><a href="#" class="page-link">8</a></li>
+                        <li class="page-item"><a href="#" class="page-link">9</a></li>
+                        <li class="page-item"><a href="#" class="page-link">10</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Następna</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <aside class="col-md-4 mt-5 bg-dark rounded">
+                <!--sidebar-->
+                <div class="bg-dark mb-3 p-4 ">
+                    <h4 class="font-italic">O stronie</h4>
+                    <p class="font-sidebar">Strona stowarzyszenia niosącego pomoc potrzebującym Lorem ipsum dolor, sit 
+                        amet consectetur adipisicing elit. Quaerat, laudantium! </p>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-italic">Archiwum</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Styczeń</a></li>
+                        <li><a href="#">Luty</a></li>
+                        <li><a href="#">Marzec</a></li>
+                        <li><a href="#">Kwiecień</a></li>
+                        <li><a href="#">Maj</a></li>
+                        <li><a href="#">Czerwiec</a></li>
+                        <li><a href="#">Lipiec</a></li>
+                        <li><a href="#">Sierpień</a></li>
+                        <li><a href="#">Wrzesień</a></li>
+                        <li><a href="#">Październik</a></li>
+                        <li><a href="#">listopad</a></li>
+                        <li><a href="#">Grudzień</a></li>
+                    </ol>
+                </div>
+                <div class="p-4">
+                    <h4 class="font-italic">Kategorie</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Wolontariat</a></li>
+                        <li><a href="#">Wsparcie</a></li>
+                        <li><a href="#">Zbiórki</a></li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-6">
+                <div class="border rounded row g-0 overflow-hidden shadow-sm position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="mb-2 text-primary">Wsparcie</strong>
+                        <h3>Ostatnia akcja</h3>
+                        <div class="mb-1 text-muted">15 Grudnia</div>
+                        <p class="card-text mb-auto">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eligendi sunt.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo dicta magnam explicabo consectetur. Labore aperiam ex alias animi quia!
+                        </p>
+                        <!-- 
+                            <div>
+                                <details>
+                                <summary style="cursor:pointer;"> (Czytaj więcej…) </summary>
+                                <p class="card-text mb-auto">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eligendi sunt.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo dicta magnam explicabo consectetur. Labore aperiam ex alias animi quia!
+                                </p> 
+                                </details>
+                            </div>
+                               
+                            
+                        -->
+                        <a href="#" class="stretched-link">Czytaj dalej</a>
+                    </div>
+                    <div class="col-auto d-none d-md-block">
+                        <img src="https://cdn.pixabay.com/photo/2017/02/25/14/30/santa-2097876__340.jpg" 
+                           width="250px" height="250px" alt="Mikołajki" title="Mikołajki" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="border rounded row g-0 overflow-hidden shadow-sm position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="mb-2 text-primary">Wsparcie</strong>
+                        <h3>Zbiórka żywności</h3>
+                        <div class="mb-1 text-muted">10 Listopada</div>
+                        <p class="card-text mb-auto">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eligendi sunt.
+                        </p>
+                        <p class="card-text mb-auto">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eligendi sunt.
+                            
+                        </p>
+                        <a href="#" class="stretched-link">Czytaj dalej</a>
+                    </div>
+                    <div class="col-auto d-none d-md-block">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/12/20/16/slums-2635238__340.jpg" 
+                           width="250px" height="250px" alt="Mikołajki" title="Mikołajki" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer" class="text-light bg-dark mt-3">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 pr-4">
+                    <h5 class="name1">Nazwa stowarzyszenia i opis</h5>
+                    <p class="name ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, 
+                        facere quia atque ducimus autem omnis, eligendi ea, ipsum sequi ad enim. Nam non optio voluptate ex repellat error ipsam beatae!</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 list-unstyled">
+                    <h5 class="name1">Odnośniki</h5>
+                    <ol class="list-unstyled">
+                        <li><a href="#">WOŚP</a></li>
+                        <li><a href="#">Caritas</a></li>
+                        <li><a href="#">Janko Muzykant</a></li>
+                        <li><a href="#">Dla dobra rodziny</a></li>
+                    </ol>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5 class="name1">Dane stowarzyszenia</h5>
+                    <ul class="list-unstyled">
+                        <li>00-000 Warszawa</li>
+                        <li>ul. Pomocna 1</li>
+                        <li><a href="tel:48123456789"></a> tel.: 123 456 789</li>
+                        <li><a href="mailto:stowarzyszenie@pomoc.pl">stowarzyszenie@pomoc.pl</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    Copyright by Blog. All rights reserved
+                </div>
+            </div>
+        </div>
+        <p class="signature">By Damian 2023</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
